@@ -30,5 +30,14 @@ public class MyPanelClass extends JPanel {
                         //Draw a second border
                         g.setColor(Color.CYAN);
                         g.drawRect(x1+3, y1+3, width-7, height-7);
+                        //Draw a diagonal line
+                        g.setColor(Color.WHITE);
+                        g.drawLine(x1, y1, x2, y2);
+                        //Draw a diagonal line in opposite direction
+                        g.setColor(Color.GREEN);
+                        g.drawLine(x1, y2, x2, y1);
+                        //Draw an oval
+                        g.setColor(Color.LIGHT_GRAY);
+                        g.fillOval((width-55)/2, (height-55)/2, 55, 55);
             }
 }
